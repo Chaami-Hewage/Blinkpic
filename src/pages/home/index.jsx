@@ -16,7 +16,7 @@ function Home() {
                 return;
             }
             const response = await axios.get(
-                `https://api.unsplash.com/search/photos?query=${searchQuery}&client_id=xRjTOZYB5Pa6O2Gfz8ZQ5CcpcmFyo75W8m4l0T3UNj4`
+                `` // Add your API key here (https://api.unsplash.com/search/photos?query=${searchQuery}&.....)
             );
             setImages(response.data.results);
         } catch (error) {
